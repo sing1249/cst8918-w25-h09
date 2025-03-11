@@ -1,47 +1,31 @@
-# Node.js
-node_modules/
-npm-debug.log
-yarn-debug.log*
-yarn-error.log*
-.npm
-.env
-.env.local
-.env.*.local
+# This is a minimal list, OK to add things per repo
+# mac specific
 .DS_Store
-
-# Logs
-logs
-*.log
-
-# Runtime data
-pids
-*.pid
-*.seed
-*.pid.lock
-
-# Coverage directory
-coverage/
-.nyc_output
-
-# IDEs and editors
-.idea/
-.vscode/
-*.swp
-*.swo
-
-# Terraform
+.ansible
+.azure/
+.bash_history
+# don't check storage creds into GH
+.boto
+.cache
+*.code-workspace
+#  may contain gcloud files
+.config
+.gitconfig
+.local
+# .netrc contains secrets for service tokens
+.netrc
+*.plan
+.sentinel
+# .ssh dir may contain private keys
+.ssh
+.terrascan
+# Terraform dot files
+.terraform
+.terraformrc
+**/.terraform/*
+.terraform.d
 *.tfstate
 *.tfstate.*
-*.tfvars
-.terraform/
-.terraform.lock.hcl
-crash.log
-override.tf
-override.tf.json
-*_override.tf
-*_override.tf.json
-
-# Exclude potential secrets
-*.pem
-*.key
-credentials.json
+.vscode
+.idea
+.idea
